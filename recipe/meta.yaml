@@ -1,4 +1,4 @@
-{% set version = "1.18.0" %}
+{% set version = "1.19.0" %}
 
 package:
   name: yamlfix
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/y/yamlfix/yamlfix-{{ version }}.tar.gz
-  sha256: ae35891e08aa830e7be7abed6ca25e020aa5998551e4d76e2dc8909bf3c35d7e
+  sha256: 22f95ed2a5b88f46f06cf7922c616b6706d3596f23a0553138796ab909e5fa96
 
 build:
   number: 0
