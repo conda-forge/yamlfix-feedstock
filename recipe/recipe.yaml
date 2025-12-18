@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 1.19.0
+  version: "1.19.1"
 
 package:
   name: yamlfix
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/y/yamlfix/yamlfix-${{ version }}.tar.gz
-  sha256: 22f95ed2a5b88f46f06cf7922c616b6706d3596f23a0553138796ab909e5fa96
+  sha256: 05f6add13959637564f278e9237f6e201ff75e061a0a4cb9fc06fa95c3001a22
 
 build:
-  number: 1
+  number: 0
   noarch: python
-  script: 
+  script:
     - sed -i '/ruyaml/d' pyproject.toml
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
